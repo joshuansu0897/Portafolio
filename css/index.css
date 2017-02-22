@@ -38,11 +38,11 @@ li a:hover {
 }
 html,body{
   font-family:'Open Sans',
-  sans-serif !important
+  sans-serif !important;
 }
 
 body{
-  position:relative
+  position:relative;
 }
 
 .text-white{
@@ -61,10 +61,6 @@ body{
     width: 100%;
     text-align: center;
     color: #fff;
-}
-
-.ahuevo video{
-  background-attachment: fixed !important;
 }
 /*video*/
 
@@ -89,6 +85,7 @@ body{
     width: 100%;
     overflow: hidden;
     background: #000;
+    padding-bottom: 300px;
 }
 .video-container .poster img {
     width: 100%;
@@ -108,4 +105,5 @@ body{
 }
 .video-container video.fillWidth {
     width: 100%;
+    position: fixed;
 }
