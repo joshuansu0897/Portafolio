@@ -26,23 +26,22 @@ li a:hover {
     color: #111;
 }
 
-.jumbotron{
-    background: url(../img/tumblr_mgu901jQme1r11qslo1_500.gif) center center #fff;
-    height: 100%;
-	  width: 100%;
-	  position: relative;
-	  background-size: cover;
-	  padding-bottom: 100px !important;
-	  background-attachment: fixed;
-	  color: white;
-}
 html,body{
   font-family:'Open Sans',
-  sans-serif !important;
+  sans-serif !important
 }
 
 body{
-  position:relative;
+  position:relative
+}
+
+#content {
+  width: 100%;
+  margin: 0 auto 20px;
+  top: 100vh;
+  position: absolute;
+  height: 100%;
+  background-color: #fff;
 }
 
 .text-white{
@@ -62,8 +61,8 @@ body{
     text-align: center;
     color: #fff;
 }
-/*video*/
 
+/*video*/
 .homepage-hero-module {
     border-right: none;
     border-left: none;
@@ -84,26 +83,25 @@ body{
     height: 100%;
     width: 100%;
     overflow: hidden;
-    background: #000;
-    padding-bottom: 300px;
 }
 .video-container .poster img {
     width: 100%;
     bottom: 0;
-    position: absolute;
+    position: fixed;
 }
 .video-container .filter {
-    z-index: 100;
+    z-index: 0;
     position: absolute;
     background: rgba(0, 0, 0, 0.4);
     width: 100%;
 }
 .video-container video {
-    position: absolute;
+    position: fixed;
     z-index: 0;
     bottom: 0;
 }
 .video-container video.fillWidth {
     width: 100%;
     position: fixed;
+    z-index: -1;
 }
