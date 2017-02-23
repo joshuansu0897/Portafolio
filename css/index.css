@@ -1,34 +1,41 @@
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    margin-bottom: 0px !important;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  margin-bottom: 0px !important;
 }
 
 li {
-    float: left;
+  float: left;
 }
 
 li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 li a:hover {
-    background-color: #3B83BD;
-    text-decoration: none;
-    color: #111;
+  background-color: #3B83BD;
+  text-decoration: none;
+  color: #111;
+}
+.menu {
+	position:fixed;
+	z-index:500;
+	top:0;
+  height: 100%;
+	width:100%;
+	box-shadow:0px 4px 3px rgba(0,0,0,.5);
 }
 
 html,body{
-  font-family:'Open Sans',
-  sans-serif !important
+  font-family:'Open Sans',sans-serif !important;
 }
 
 body{
@@ -37,7 +44,7 @@ body{
 
 #content {
   width: 100%;
-  margin: 0 auto 20px;
+  margin: 0 auto 0px;
   top: 100vh;
   position: absolute;
   height: 100%;
@@ -54,54 +61,58 @@ body{
 
 /*video yo edite*/
 .title-container {
-    z-index: 1000;
-    position: absolute;
-    top: 35%;
-    width: 100%;
-    text-align: center;
-    color: #fff;
+  z-index: 0;
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
 }
 
 /*video*/
 .homepage-hero-module {
-    border-right: none;
-    border-left: none;
-    position: relative;
+  border-right: none;
+  border-left: none;
+  position: relative;
+  height: 100%;
+  width: 100%;
 }
 .no-video .video-container video,
 .touch .video-container video {
-    display: none;
+  display: none;
 }
 .no-video .video-container .poster,
 .touch .video-container .poster {
-    display: block !important;
+  display: block !important;
 }
 .video-container {
-    position: relative;
-    bottom: 0%;
-    left: 0%;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 .video-container .poster img {
-    width: 100%;
-    bottom: 0;
-    position: fixed;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
 }
 .video-container .filter {
-    z-index: 0;
-    position: absolute;
-    background: rgba(0, 0, 0, 0.4);
-    width: 100%;
+  z-index: 0;
+  position: fixed;
+  background: rgba(0, 0, 0, 32);
+  width: 100%;
 }
 .video-container video {
-    position: fixed;
-    z-index: 0;
-    bottom: 0;
+  z-index: 0;
+  bottom: 0;
 }
 .video-container video.fillWidth {
-    width: 100%;
-    position: fixed;
-    z-index: -1;
+  width: 100%;
+}
+
+video.fillWidth {
+  position: fixed;
+  z-index: -1;
 }
